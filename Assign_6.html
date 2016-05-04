@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="Assign_6.css">
+    <script src="Assign_6.js"></script>
+  </head>
+  <body>
+  	<div id="zipBox">
+      <form>
+        <legend>Get Your Local Weather</legend>
+        <label for="zip">Zipcode</label>
+        <input type="text" name="zip" id="zip">
+        <input type="submit" id="zipSubmit">
+      </form>
+    </div>
+    <div id="displayData">
+      <h1 id="title">Weather Data</h1>
+      <p id="summary"></p>
+      <div id="tempCon">
+      	<h3>Temperature</h3>
+      	<ul>
+        	<li><span>Currently: </span><span id="temp"></span></li>
+        	<li><span>High: </span><span id="tempH"></span></li>
+        	<li><span>Low: </span><span id="tempL"></span></li>
+      	</ul>
+      </div>
+      <div id="humCon">
+      	<h3>Humidity and Pressure</h3>
+      	<ul>
+        	<li><span>Pressure: </span><span id="press"></span></li>
+        	<li><span>Humidity: </span><span id="hum"></span></li>
+        	<li><span>Rain: </span><span id="rain"></span></li>
+      	</ul>
+      </div>
+      <div id="windCon">
+      	<h3>Wind</h3>
+      	<ul>
+      		<li><span>Wind Speed: </span><span id="wind"></span></li>
+      		<li><span>Wind Direction: </span><span id="windD"></span></li>
+      	</ul>
+      </div>
+    </div>
+    <br>
+    <div id="truthBox">
+      <form>
+    	<legend>Two truths and a lie</legend>
+    	<label for="truth1">Truth</label>
+    	<input type="text" name="Truth" id="truth1">
+    	<br>
+    	<label for="truth2">Truth</label>
+    	<input type="text" name="Truth" id="truth2">
+    	<br>
+    	<div id="lieCon">
+    		<label for="lie">Lie</label>
+    		<input type="text" name="Lie" id="lie">
+    	</div>
+    	<br>
+    	<input type="submit" id="truthSubmit">
+      </form>
+    </div>
+    <h3>Response</h3>
+    <p><span id="response"></span></p>
+  </body>
+</html>
